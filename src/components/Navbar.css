@@ -1,0 +1,72 @@
+:root {
+    --dark: #131a26;
+    --light: #eee;
+    --primary: #232249;
+    --secondary: #e5523a;
+    --third: #6e2262;
+    --fourth: #215291;
+    --fifth: #1fa365;
+    
+}
+
+.navbar {
+    /* width: 300px; */
+    height: 100%;
+    background-color: var(--dark);
+    color: var(--light);
+    
+}
+
+.nav-ul {
+    list-style-type: none;
+    /* padding-top: 10px; */
+    width: 100%;
+    height: 70px;
+}
+
+.nav-item {
+    /* margin: 30px 0px 20px 0px; */
+    transition: 0.2s ease-in-out;
+    font-size: 20px;
+    width: 100%;
+    height: 70px;
+    
+}
+
+.nav-item p {
+    margin: 0px;
+    padding: 0px;
+    text-align: left;
+    padding-top: 18px;
+    width: 200px;
+    margin-left: 50px;
+}
+
+i {
+    margin-right: 5px;
+}
+
+.nav-item:hover {
+    cursor: pointer;
+    background-color: var(--fifth);
+}
+
+.nav-top {
+    width: 100%;
+    height: max-content;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 20px;
+}
+
+.nav-bottom {
+    width: 100%;
+    height: max-content;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 60px;
+}
+
+
