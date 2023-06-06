@@ -11,7 +11,7 @@ import SignIn from './pages/Signin';
 import Navbar from './components/Navbar';
 import Tickets from './pages/tickets';
 import Settings from './pages/Settings';
-import currentUser from './components/CurrentUser';
+import CurrentUser from './components/CurrentUser';
 
 
 
@@ -27,7 +27,7 @@ function App() {
             Logo Placeholder
           </div>
           <div className='small-navbar'>
-            <currentUser />
+            <CurrentUser />
           </div>
         </header>
         <div className='content-wrapper'>
