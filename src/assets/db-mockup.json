@@ -1,0 +1,13 @@
+{
+    "tickets": [
+        {
+            "name": "Projector Error",
+            "type": "hardware error",
+            "priority": true,
+            "userRef": "ID OF A USER",
+            "description": "Projector image is weird, there are several big holes in image projection",
+            "imageUrls": [],
+            "timestamp": "00:00:00"
+        }
+    ]
+}

@@ -1,0 +1,134 @@
+:root {
+    --dark: #131a26;
+    --light: #eee;
+    --primary: #232249;
+    --secondary: #e5523a;
+    --third: #6e2262;
+    --fourth: #215291;
+    --fifth: #1fa365;
+    --green-dark: #0e7a48;
+}
+
+.ticket-btn {
+    width: 180px;
+    height: 40px;
+    border: none;
+    border-radius: 12px;
+    background-color: var(--green-dark);
+    color: var(--light);
+    text-decoration: none;
+    text-align: center;
+    padding-top: 10px;
+    transition: 0.2s ease-in-out;
+}
+
+.new-ticket {
+    display: inline;
+    width: 550px;
+    height: 80px;
+    float: left;
+    padding-top: 15px;
+}
+
+.ticket-btn:hover {
+    opacity: 0.8;
+}
+
+.ticket-link {
+    text-decoration: none;
+    float: right;
+    margin-top: -40px;
+}
+
+.line {
+    width: 100%;
+    border: 1px solid black; 
+}
+
+.pageHeader {
+    padding-top: 50px;
+    width: 400px;
+}
+
+main {
+    width: 100%;
+    height: max-content;
+    /* background-color: #131a26; */
+    padding-top: 20px;
+}
+
+.main-h1 {
+    margin-top: 30px;
+}
+
+.p-inline {
+    color: var(--green-dark);
+    font-weight: 500;
+    display: inline;
+}
+
+.tickets-listings {
+    width: 500px;
+    height: 1000px;
+}
+
+.listing-container {
+    width: 500px;
+    height: 40px;
+    border: 2px solid var(--dark);
+}
+
+.formButton, .formButtonActive {
+    width: 130px;
+    height: 40px;
+    background-color: var(--fifth);
+    border: none;
+    border-radius: 12px;
+    transition: 0.2s ease-in-out;
+    margin: 0px 10px 0px 10px;
+}
+
+.formButtonActive {
+    background-color: #215291;
+    color: #ffffff;
+}
+
+.formButton, .formButtonActive:hover {
+    cursor: pointer;
+}
+
+.formMessage {
+    border: 2px solid var(--fifth);
+    border-radius: 12px;
+}
+
+.formLine {
+    margin: 30px 0px 30px 0px;
+}
+
+.listingItem {
+    color: black !important;
+    width: 100%;
+    height: max-content;
+    background-color: #fafafa;
+    margin-top: 30px;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    border-radius: 12px;
+    padding: 30px 0px 30px 30px;
+}
+
+.deleteBtn {
+    width: 100px;
+    height: 40px;
+    background-color: #ff5555;
+    color: var(--light);
+    border: none;
+    border-radius: 6px;
+    transition: 0.2s ease-in-out;
+    margin-top: 10px;
+}
+
+.deleteBtn:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}

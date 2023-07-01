@@ -1,0 +1,61 @@
+:root {
+  --dark: #131a26;
+  --light: #eee;
+  --primary: #232249;
+  --secondary: #e5523a;
+  --third: #6e2262;
+  --fourth: #215291;
+  --fifth: #1fa365;
+  --green-dark: #0e7a48;
+}
+
+.header {
+  width: 100%;
+  height: 60px;
+  background-color: var(--green-dark);
+  position: fixed;
+  z-index: 10;
+}
+
+.logo {
+  width: 400px;
+  color: #eee;
+  text-align: left;
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
+  padding: 5px 0px 0px 30px;
+  float: left;
+}
+
+.small-navbar {
+  width: 600px;
+  float: right;
+  padding: 15px 30px 0px 0px;
+  font-size: 18px;
+  text-align: right;
+  color: #eee;
+}
+
+.content-wrapper {
+  width: 100%;
+  height: max-content;
+  padding-top: 20px;
+}
+
+.navbar {
+  width: 250px;
+  height: 100%;
+  float: left;
+  position: fixed;
+  padding-top: 20px;
+}
+
+.content {
+  width: auto;
+  /* min-width: 800px; */
+  height: max-content;
+  overflow: hidden;
+  /* background-color: red; */
+  padding: 30px;
+  padding-left: 270px;
+}

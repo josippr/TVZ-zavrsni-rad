@@ -1,0 +1,104 @@
+:root {
+    --dark: #131a26;
+    --light: #eee;
+    --primary: #232249;
+    --secondary: #e5523a;
+    --third: #6e2262;
+    --fourth: #215291;
+    --fifth: #1fa365;
+    --green-dark: #0e7a48;
+}
+
+
+
+.signIn-container {
+    width: 100%;
+    height: 600px;
+    /* background-color: red; */
+    margin-top: 30px;
+    margin-top: 200px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.signIn-form {
+    width: 600px;
+    height: inherit;
+    /* border: 1px solid black; */
+    margin: 0 auto;
+}
+
+form {
+    width: 300px;
+    height: max-content;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+form input {
+    width: 300px;
+    height: 40px;
+    border: 2px solid var(--dark);
+    border-radius: 12px;
+    font-family: 'Poppins', sans-serif;
+    margin: 10px 0px 10px 0px;
+    
+}
+
+.forgot-password {
+    color: #299c67;
+    text-decoration: none;
+    text-align: right;
+    float: right;
+    padding-top: 10px;
+}
+
+.signInBtn{
+    width: 150px;
+    height: 40px;
+    /* border: 1px solid var(--dark); */
+    border: none;
+    border-radius: 12px;
+    background-color: #34c480;
+    cursor: pointer;
+    float: left;
+    transition: 0.2s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+}
+
+.signInBtn:hover {
+    background-color: #52e7a2;
+}
+
+.sign-up {
+    margin-top: 50px;
+    text-align: left;
+}
+
+.socialLogin {
+    width: 300px;
+    height: 150px;
+    margin: 0 auto;
+    text-align: center;
+    border: 2px solid var(--green-dark);
+    border-radius: 12px;
+    margin-top: 50px;
+}
+
+.socialLogin:hover {
+    cursor: pointer;
+}
+
+.socialIconDiv {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    background-color: transparent;
+    border: none;
+    text-align: center;
+}
+
+.socialIconImg {
+    width: 50px;
+    height: 50px;
+}

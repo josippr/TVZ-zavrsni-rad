@@ -1,0 +1,45 @@
+:root {
+    --dark: #131a26;
+    --light: #eee;
+    --primary: #232249;
+    --secondary: #e5523a;
+    --third: #6e2262;
+    --fourth: #215291;
+    --fifth: #1fa365;
+    --green-dark: #0e7a48;
+}
+
+.home {
+    width: 90%;
+    height: max-content;
+    margin: 0 auto;
+}
+
+.home-content {
+    width: 100%;
+    height: inherit;
+    /* background-color: #0e7a48; */
+}
+
+.all-tickets-container {
+    width: 50%;
+    height: inherit;
+    background-color: #215291;
+    float: left;
+    padding-top: 30px;
+}
+
+.create-tickets-container {
+    width: 50%;
+    height: inherit;
+    background-color: #6e2262;
+    float: right;
+    padding-top: 30px;
+}
+
+.create-ticket-form {
+    border: 1px solid black;
+    width: 90%;
+    height: 600px;
+    margin: 0 auto;
+}

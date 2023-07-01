@@ -1,0 +1,117 @@
+:root {
+    --dark: #131a26;
+    --light: #eee;
+    --primary: #232249;
+    --secondary: #e5523a;
+    --third: #6e2262;
+    --fourth: #215291;
+    --fifth: #1fa365;
+    --green-dark: #0e7a48;
+}
+
+.profileHeader{
+    width: 95%;
+    height: max-content;
+    padding-top: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    margin: 0 auto;
+}
+
+.profile-title {
+    width: 200px;
+    height: 80px;
+    float: left;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.logout-btn{
+    width: 150px;
+    height: 40px;
+    /* border: 1px solid var(--dark); */
+    border: none;
+    border-radius: 12px;
+    background-color: #34c480;
+    cursor: pointer;
+    float: left;
+    transition: 0.2s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+    float: right;
+}
+
+.changePersonalDetails {
+    width: 200px;
+    height: 40px;
+    /* border: 1px solid var(--dark); */
+    border: none;
+    border-radius: 12px;
+    background-color: #34c480;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+    float: left;
+    padding-top: 6 px;
+    text-decoration: none;
+    color: var(--dark);
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+}
+
+.changePersonalDetails:hover {
+    background-color: #52e7a2;
+}
+
+.logout-btn:hover {
+    background-color: #52e7a2;
+}
+
+.profile-title-container {
+    width: 95%;
+    height: max-content;
+    /* background-color: blue; */
+    margin: 0 auto;
+}
+
+.profile-form-container {
+    width: 95%;
+    height: max-content;
+    /* background-color: blue; */
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+.profile-item-wrapper {
+    width: 100%;
+    height: max-content;
+    /* background-color: #0e7a48; */
+    margin: 40px 0px 50px 0px;
+    text-align: left;
+}
+
+.profile-item-title {
+    font-weight: bold;
+    color: var(--green-dark);
+    font-size: 24px;
+}
+
+.profile-item-desc {
+    font-size: 16px;
+    font-style: italic;
+    margin-top: 15px;
+}
+
+.profile-item-input {
+    width: 500px;
+    height: 40px;
+    box-shadow: 5px 5px 5px 5px #c2c2c2;
+    border: none;
+    margin-top: 20px;
+}
+
+main {
+    width: 100%;
+    height: max-content;
+    float: left;
+}

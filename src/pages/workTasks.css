@@ -1,0 +1,81 @@
+:root {
+    --dark: #131a26;
+    --light: #eee;
+    --primary: #232249;
+    --secondary: #e5523a;
+    --third: #6e2262;
+    --fourth: #215291;
+    --fifth: #1fa365;
+    --green-dark: #0e7a48;
+}
+
+.workTasksWrapper {
+    width: 100%;
+    height: 100vh;
+    /* background-color: #131a26; */
+}
+
+.workHeader {
+    width: 90%;
+    height: 80px;
+    padding-top: 50px;
+    margin: 0 auto;
+}
+
+.workMain {
+    width: 100%;
+    height: max-content;
+}
+
+.createTaskWrapper {
+    width: 90%;
+    height: 300px;
+    background-color: #f7f7f7;
+    border-radius: 12px;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    margin: 0 auto;
+}
+
+.createTaskTitle {
+    text-align: center;
+    padding-top: 10px;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.taskInput {
+    width: 90%;
+    height: 40px;
+}
+
+.createNewTaskForm {
+    width: 90%;
+    height: max-content;
+    margin: 0 auto;
+}
+
+.createNewTaskForm label {
+    font-weight: 400;
+}
+
+.taskButton {
+    width: 140px;
+    height: 35px;
+    background-color: #1fa365;
+    border: none;
+    border-radius: 12px;
+    transition: 0.2s ease-in-out;
+}
+
+.taskButton:hover {
+    cursor: pointer;
+    background-color: #58c291;
+}
+
+.createdTasksWrapper {
+    width: 90%;
+    height: 500px;
+    /* background-color: #131a26; */
+    margin: 0 auto;
+    margin-top: 50px;
+}
