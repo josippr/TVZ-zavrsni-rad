@@ -72,10 +72,50 @@
     background-color: #58c291;
 }
 
+/*
 .createdTasksWrapper {
     width: 90%;
-    height: 500px;
-    /* background-color: #131a26; */
+    height: max-contents;
+    background-color: #131a26;
     margin: 0 auto;
     margin-top: 50px;
 }
+
+.createdTask {
+    width: 100%;
+    height: max-content;
+}
+
+.deleteBtn {
+    width: 30%;
+    height: 40px;
+    background-color: #215291;
+    float: right; 
+    margin-top: -50px;
+    margin-right: 30px;
+}
+
+.task-content {
+    width: 70%;
+    height: max-content;
+    float: left;
+}
+
+.listingItem {
+    width: 100%;
+    height: max-content;
+    
+}
+
+.categoryListings {
+    width: 100%;
+    height: max-content;
+}
+
+@media only screen and (max-width: 650px) {
+    .deleteBtn {
+        margin-top: 150px;
+    }
+}
+
+*/

@@ -14,7 +14,7 @@ import './SignIn.css';
 
 function SignUp() {
 
-    const [showPassword, setShowPassword] = useState(false)
+    const [showPassword] = useState(false)
   const [formData, setFormData] = useState({
     name: '',
     email: '',

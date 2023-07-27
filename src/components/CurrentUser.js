@@ -1,13 +1,13 @@
 
 import {getAuth} from 'firebase/auth';
-import {useState, useEffect} from 'react';
+import {useState} from 'react';
 //import Profile from '../pages/profile';
 
 function CurrentUser(){
 
     const auth = getAuth();
 
-    const [formData, setFormData] = useState({
+    const [formData] = useState({
         //name: auth.currentUser.displayName,
         email: auth.currentUser.email,
     })
