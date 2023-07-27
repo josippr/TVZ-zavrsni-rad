@@ -1,6 +1,6 @@
 
 ## App deployment links (Vercel):
-- Version 1.1.2: [Company-mgmt-v-1-1-2]([https://www.google.com](https://company-mgmt.vercel.app/))
+- Version 1.1.2: [Company-mgmt-v-1-1-2](https://company-mgmt.vercel.app/)
 
 ## Update 27-07-2023
 
