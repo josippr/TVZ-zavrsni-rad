@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 
 function ListingItem({ listing, id }) {
   if (!listing || typeof listing !== 'object' || !listing.name) {
@@ -6,7 +6,7 @@ function ListingItem({ listing, id }) {
     return null;
   }
 
-  const { name, creator, access, timestamp, type, urgent } = listing;
+  //const { name, creator, access, timestamp, type, urgent } = listing;
 
   return (
     <li className='categoryListing'>
