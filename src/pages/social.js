@@ -1,13 +1,20 @@
 import './social.css';
 import { useEffect, useState } from 'react';
 
+//firebase collections
 import { collection, getDocs, deleteDoc, getDoc, updateDoc, setDoc } from 'firebase/firestore';
 import { db } from '../firebase.config';
-import { toast } from 'react-toastify';
+;
 import { doc } from 'firebase/firestore';
 import { useNavigate } from 'react-router-dom';
+
+//router
 import { getAuth } from 'firebase/auth';
 import { Link } from 'react-router-dom';
+
+//addons
+import { toast } from 'react-toastify'
+
 
 function Social() {
 
