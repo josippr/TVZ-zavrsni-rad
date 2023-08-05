@@ -107,6 +107,11 @@
 .social-item {
     width: 100%;
     height: max-content;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    background-color: #fcfbfb;
 }
 
 input::file-selector-button {

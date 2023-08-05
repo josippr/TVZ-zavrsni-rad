@@ -120,12 +120,9 @@ function Profile() {
             <button type='button' className='logout-btn' onClick={onLogout}>
             Logout
             </button>
-            
         </header>
 
-        <main>
-            
-
+        <main className='main'>
             <div className='profileCard'>
             <form className='profile-form-container'>
                 <p
@@ -134,6 +131,7 @@ function Profile() {
                     changeDetails && onSubmit()
                     setChangeDetails((prevState) => !prevState)
                     }}
+                    style={{paddingTop: "12px"}}
                 >
                     {changeDetails ? 'Done' : 'Edit Profile'}
                 </p> <br /><br />
@@ -176,7 +174,7 @@ function Profile() {
                     <div className='profile-item-desc'>
                         <p>Your password is fully private. It is stored in encrypted format, so no one is able to see it. Privacy Policy</p>
                     </div>
-                    <Link to='/forgotPassword' className='changePersonalDetails'>Forgot Password?</Link>
+                    <Link to='/forgotPassword' className='changePersonalDetails' style={{marginTop: "20px", paddingTop: "12px", textAlign: "center"}}>Forgot Password?</Link>
                 </div>
             </form>
             </div>
