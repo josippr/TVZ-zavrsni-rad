@@ -19,15 +19,13 @@ function Navbar() {
                     <div className='nav-item' onClick={() => navigate('/WorkTasks')}>
                         <p><i className="fa-solid fa-square-check"></i> My Work Tasks</p>
                     </div>
-                    <div className='nav-item' onClick={() => navigate('/Profile')}>
-                        <p><i class="fa-solid fa-envelope"></i> My Contacts</p>
-                    </div>
-                    <div className='nav-item' onClick={() => navigate('/Profile')}>
-                        <p><i class="fa-regular fa-calendar"></i> My Notes</p>
-                    </div>
                     <div className='nav-item' onClick={() => navigate('/Social')}>
                         <p><i class="fa-solid fa-earth-americas"></i> Social</p>
                     </div>
+                    <div className='nav-item' onClick={() => navigate('/Profile')}>
+                        <p><i class="fa-solid fa-circle-info"></i> About</p>
+                    </div>
+                    
                 </div>
                 <div className='nav-bottom'>
                     <div className='nav-item' onClick={() => navigate('/signIn')}>
@@ -36,9 +34,7 @@ function Navbar() {
                     <div className='nav-item' onClick={() => navigate('/Profile')}>
                         <p><i className="fa-solid fa-user"></i> Profile</p>
                     </div>
-                    <div className='nav-item' onClick={() => navigate('/Settings')}>
-                        <p><i className="fa-solid fa-gear"></i> Settings</p>
-                    </div>
+                    
                     
                     
                 </div>

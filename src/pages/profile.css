@@ -9,6 +9,10 @@
     --green-dark: #0e7a48;
 }
 
+.profile {
+    padding: 30px 10px 0px 10px;
+}
+
 .profileHeader{
     width: 95%;
     height: max-content;
@@ -79,7 +83,7 @@
     height: max-content;
     /* background-color: blue; */
     margin: 0 auto;
-    margin-top: 80px;
+    margin-top: 10px;
 }
 
 .profile-item-wrapper {
@@ -114,4 +118,9 @@ main {
     width: 100%;
     height: max-content;
     float: left;
+}
+
+.forgot-password-container {
+    padding-top: 50px;
+    text-align: center;
 }

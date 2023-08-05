@@ -20,14 +20,12 @@ function MobileNavbar({ onCloseNav }) {
         <div className='nav-item' onClick={() => { navigate('/WorkTasks'); handleLinkClick(); }}>
           <p><i className="fa-solid fa-square-check"></i> My Work Tasks</p>
         </div>
-        <div className='nav-item' onClick={() => { navigate('/Profile'); handleLinkClick(); }}>
-          <p><i className="fa-solid fa-envelope"></i> My Contacts</p>
-        </div>
-        <div className='nav-item' onClick={() => { navigate('/Profile'); handleLinkClick(); }}>
-          <p><i className="fa-regular fa-calendar"></i> My Calendar</p>
-        </div>
+        
         <div className='nav-item' onClick={() => { navigate('/Social'); handleLinkClick(); }}>
           <p><i className="fa-solid fa-earth-americas"></i> Social</p>
+        </div>
+        <div className='nav-item' onClick={() => { navigate('/Profile'); handleLinkClick(); }}>
+          <p><i className="fa-solid fa-envelope"></i> About</p>
         </div>
         <div className='nav-item' onClick={() => { navigate('/signIn'); handleLinkClick(); }}>
           <p><i className="fa-solid fa-right-to-bracket"></i> Sign In</p>
@@ -35,9 +33,7 @@ function MobileNavbar({ onCloseNav }) {
         <div className='nav-item' onClick={() => { navigate('/Profile'); handleLinkClick(); }}>
           <p><i className="fa-solid fa-user"></i> Profile</p>
         </div>
-        <div className='nav-item' onClick={() => { navigate('/Settings'); handleLinkClick(); }}>
-          <p><i className="fa-solid fa-gear"></i> Settings</p>
-        </div>
+        
       </div>
     </div>
   );
