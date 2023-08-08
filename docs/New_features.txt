@@ -10,6 +10,10 @@ Added features:
 - performance optimisation, routing is now 3 times faster
 
 
+Update 06-08-2023
+
+Fixed styling on profile, social and forgot password pages, and navbar & mobile navbar components
+
 Update 27-07-2023
 
 Fixed responsive errors and layout defects on Tickets, WorkTasks and Social pages
