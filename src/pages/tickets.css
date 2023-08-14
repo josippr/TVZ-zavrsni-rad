@@ -7,6 +7,11 @@
     --fourth: #215291;
     --fifth: #1fa365;
     --green-dark: #0e7a48;
+    --gray-dse: #2D3748;
+    --dark-dse: #171923;
+    --purple: #553C9A;
+    --pink: #9F7AEA;
+    
 }
 
 .ticket-btn {
@@ -14,7 +19,7 @@
     height: 40px;
     border: none;
     border-radius: 12px;
-    background-color: var(--green-dark);
+    background-color: var(--purple);
     color: var(--light);
     text-decoration: none;
     text-align: center;
@@ -63,7 +68,7 @@ main {
 }
 
 .p-inline {
-    color: var(--green-dark);
+    color: var(--pink);
     font-weight: 500;
     display: inline;
 }
@@ -82,7 +87,7 @@ main {
 .formButton, .formButtonActive {
     width: 130px;
     height: 40px;
-    background-color: var(--fifth);
+    background-color: var(--pink);
     border: none;
     border-radius: 12px;
     transition: 0.2s ease-in-out;
@@ -99,7 +104,7 @@ main {
 }
 
 .formMessage {
-    border: 2px solid var(--fifth);
+    border: 2px solid var(--pink);
     border-radius: 12px;
 }
 
@@ -111,9 +116,10 @@ main {
     color: black !important;
     width: 100%;
     height: max-content;
-    background-color: #fafafa;
+    background-color: var(--gray-dse);
+    color: var(--light) !important;
     margin-top: 30px;
-    box-shadow: 10px 10px 5px #aaaaaa;
+    /* box-shadow: 10px 10px 5px var(--gray-dse); */
     border-radius: 12px;
     padding: 30px 0px 30px 30px;
 }

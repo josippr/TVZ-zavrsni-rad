@@ -7,6 +7,10 @@
     --fourth: #215291;
     --fifth: #1fa365;
     --green-dark: #0e7a48;
+    --gray-dse: #2D3748;
+    --dark-dse: #171923;
+    --purple: #553C9A;
+    --pink: #9F7AEA;
 }
 
 .workTasksWrapper {
@@ -30,9 +34,9 @@
 .createTaskWrapper {
     width: 90%;
     height: 300px;
-    background-color: #f7f7f7;
+    background-color: var(--gray-dse);
     border-radius: 12px;
-    box-shadow: 10px 10px 5px #aaaaaa;
+    /* box-shadow: 10px 10px 5px #aaaaaa; */
     margin: 0 auto;
 }
 
@@ -61,7 +65,7 @@
 .taskButton {
     width: 140px;
     height: 35px;
-    background-color: #1fa365;
+    background-color: var(--pink);
     border: none;
     border-radius: 12px;
     transition: 0.2s ease-in-out;
@@ -69,7 +73,8 @@
 
 .taskButton:hover {
     cursor: pointer;
-    background-color: #58c291;
+    /* background-color: #58c291; */
+    opacity: 0.8;
 }
 
 /*
