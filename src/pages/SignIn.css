@@ -7,13 +7,16 @@
     --fourth: #215291;
     --fifth: #1fa365;
     --green-dark: #0e7a48;
+    --gray-dse: #2D3748;
+    --dark-dse: #171923;
+    --purple: #553C9A;
+    --pink: #9F7AEA;
+    
 }
-
-
 
 .signIn-container {
     width: 100%;
-    height: 600px;
+    height: max-content;
     /* background-color: red; */
     margin-top: 30px;
     margin-top: 200px;
@@ -25,6 +28,10 @@
     height: inherit;
     /* border: 1px solid black; */
     margin: 0 auto;
+    background-color: var(--gray-dse);
+    border-radius: 24px;
+    padding-top: 30px;
+    padding-bottom: 60px;
 }
 
 form {
@@ -46,7 +53,7 @@ form input {
 }
 
 .forgot-password {
-    color: #299c67;
+    color: var(--pink);
     text-decoration: none;
     text-align: right;
     float: right;
@@ -59,7 +66,7 @@ form input {
     /* border: 1px solid var(--dark); */
     border: none;
     border-radius: 12px;
-    background-color: #34c480;
+    background-color: var(--pink);
     cursor: pointer;
     float: left;
     transition: 0.2s ease-in-out;
@@ -67,7 +74,8 @@ form input {
 }
 
 .signInBtn:hover {
-    background-color: #52e7a2;
+    /* background-color: #52e7a2; */
+    opacity: 0.8;
 }
 
 .sign-up {
@@ -77,10 +85,10 @@ form input {
 
 .socialLogin {
     width: 300px;
-    height: 150px;
+    height: 80px;
     margin: 0 auto;
     text-align: center;
-    border: 2px solid var(--green-dark);
+    border: 2px solid var(--purple);
     border-radius: 12px;
     margin-top: 50px;
 }

@@ -6,6 +6,11 @@
     --third: #6e2262;
     --fourth: #215291;
     --fifth: #1fa365;
+    --green-dark: #0e7a48;
+    --gray-dse: #2D3748;
+    --dark-dse: #171923;
+    --purple: #553C9A;
+    --pink: #9F7AEA;
     
 }
 
@@ -18,7 +23,7 @@
 .navbar {
     /* width: 300px; */
     height: 100%;
-    background-color: var(--dark);
+    background-color: var(--dark-dse);
     color: var(--light);
     
 }
@@ -54,7 +59,7 @@ i {
 
 .nav-item:hover {
     cursor: pointer;
-    background-color: var(--fifth);
+    background-color: var(--pink);
 }
 
 .nav-top {

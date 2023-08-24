@@ -57,7 +57,7 @@ function CreateTicket() {
         if (user) {
           setFormData({ ...formData, userRef: user.uid })
         } else {
-          navigate('/sign-in')
+          navigate('/signIn')
         }
       })
     }

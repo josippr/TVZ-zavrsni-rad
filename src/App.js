@@ -89,8 +89,9 @@ function App() {
               <Route path="/newPost" element={<PrivateRoute />}>
                 <Route path="/newPost" element={<NewPost />} />
               </Route>
-              <Route path="/social" element={<Social />} />
-
+              <Route path="/social" element={<PrivateRoute />}>
+                <Route path="/social" element={<Social />} />
+              </Route>
               {/* user login/register and profile review and updating */}
               <Route path="/signIn" element={<SignIn />} />
               <Route path="/signUp" element={<SignUp />} />
