@@ -20,7 +20,7 @@ function Ticket() {
         const user = auth.currentUser;
 
         if (!user) {
-          navigate('/sign-in');
+          navigate('/signIn');
           return;
         }
 

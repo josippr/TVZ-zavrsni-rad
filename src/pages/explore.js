@@ -61,30 +61,6 @@ function Explore() {
         fetchtasks();
     }, [auth]);
 
-    /*
-    useEffect(() => {
-        const fetchposts = async () => {
-        try {
-            const user = auth.currentUser;
-            if (!user) {
-            // User not logged in, handle this case if needed
-            return;
-            }
-
-            const userId = user.uid;
-            const listingsRef = collection(db, 'posts');
-            const q = query(listingsRef, where('userRef', '==', userId));
-            const querySnapshot = await getDocs(q);
-            const count = querySnapshot.size;
-            setTaskCount(count);
-        } catch (error) {
-            console.error('Error fetching tasks:', error);
-        }
-        };
-
-        fetchposts();
-    }, [auth]);
-    */
 
 
 
@@ -92,36 +68,36 @@ function Explore() {
         <div className="home">
             <h1>Home</h1>
             <div className='home-content'>
-                <div className='left'>
-                    <div className='tickets-number'>
-                        {ticketCount}
+
+                <div className='home-icons'>
+                    <div className='icon'>
+                        <div className='tickets-number'>
+                            {ticketCount}
+                            <div className='tickets-title'>
+                                Opened tickets
+                            </div>
+                        </div>
                     </div>
-                    <div className='tickets-title'>
-                        Opened tickets
+                    <div className='icon'>
+                        <div className='tickets-number'>
+                            {taskCount}
+                            <div className='tickets-title'>
+                                My work tasks
+                            </div>
+                        </div>
+                    </div>
+                    <div className='icon'>
+                        <div className='tickets-number'>
+                            {postCount}
+                            <div className='tickets-title'>
+                                My Social feed activity
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div className='right'>
-                    <div className='tickets-number'>
-                        {taskCount}
-                    </div>
+                <div className='home-features'>
                     <div className='tickets-title'>
-                        My work tasks
-                    </div>
-                </div>
-                <div className='left-two'>
-                    <div className='tickets-number'>
-                        {postCount}
-                    </div>
-                    <div className='tickets-title'>
-                        My Social feed activity
-                    </div>
-                </div>
-                <div className='right'>
-                    <div className='tickets-number'>
-                        
-                    </div>
-                    <div className='tickets-title'>
-                        Total
+                        My Tickets
                     </div>
                 </div>
             </div>
