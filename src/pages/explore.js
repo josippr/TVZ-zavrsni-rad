@@ -61,30 +61,6 @@ function Explore() {
         fetchtasks();
     }, [auth]);
 
-    
-    useEffect(() => {
-        const fetchposts = async () => {
-        try {
-            const user = auth.currentUser;
-            if (!user) {
-            // User not logged in, handle this case if needed
-            return;
-            }
-
-            const userId = user.uid;
-            const listingsRef = collection(db, 'posts');
-            const q = query(listingsRef, where('userRef', '==', userId));
-            const querySnapshot = await getDocs(q);
-            const count = querySnapshot.size;
-            setTaskCount(count);
-        } catch (error) {
-            console.error('Error fetching tasks:', error);
-        }
-        };
-
-        fetchposts();
-    }, [auth]);
-    
 
 
 
@@ -92,6 +68,7 @@ function Explore() {
         <div className="home">
             <h1>Home</h1>
             <div className='home-content'>
+
                 <div className='home-icons'>
                     <div className='icon'>
                         <div className='tickets-number'>
