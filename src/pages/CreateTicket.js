@@ -30,9 +30,6 @@ function CreateTicket() {
     access: false,
     urgent: false,
     address: '',
-    
-    
-    
   })
 
   const {
@@ -43,8 +40,6 @@ function CreateTicket() {
     access,
     urgent,
     address,
-    
-    
   } = formData
 
   const auth = getAuth()
@@ -66,110 +61,59 @@ function CreateTicket() {
       isMounted.current = false
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [isMounted])
+   }, [isMounted])
 
   const onSubmit = async (e) => {
     e.preventDefault()
-
     setLoading(true)
     
+  const formDataCopy = {
+     ...formData,
+     //geolocation,
+     timestamp: serverTimestamp(),
+  }
     
+  formDataCopy.description = address
+  
+  delete formDataCopy.address
+  // !formDataCopy.offer && delete formDataCopy.discountedPrice
 
-    
+  const docRef = await addDoc(collection(db, 'listings'), formDataCopy)
+  setLoading(false)
+  toast.success('New Ticket saved!')
+  navigate(`/Tickets`)
+}
 
-    //let geolocation = {}
-    //let description
-/*
-    // Store image in firebase
-    const storeImage = async (image) => {
-      return new Promise((resolve, reject) => {
-        const storage = getStorage()
-        const fileName = `${auth.currentUser.uid}-${image.name}-${uuidv4()}`
+const onMutate = (e) => {
+  let boolean = null
 
-        
-
-        
-
-        uploadTask.on(
-          'state_changed',
-          (snapshot) => {
-            const progress =
-              (snapshot.bytesTransferred / snapshot.totalBytes) * 100
-            console.log('Upload is ' + progress + '% done')
-            switch (snapshot.state) {
-              case 'paused':
-                console.log('Upload is paused')
-                break
-              case 'running':
-                console.log('Upload is running')
-                break
-              default:
-                break
-            }
-          },
-          (error) => {
-            reject(error)
-          },
-          () => {
-            // Handle successful uploads on complete
-            // For instance, get the download URL: https://firebasestorage.googleapis.com/...
-            getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
-              resolve(downloadURL)
-            })
-          }
-        )
-      })
-    }
-
-    */
-
-    const formDataCopy = {
-      ...formData,
-      //geolocation,
-      timestamp: serverTimestamp(),
-    }
-
-    formDataCopy.description = address
-    
-    delete formDataCopy.address
-    // !formDataCopy.offer && delete formDataCopy.discountedPrice
-
-    const docRef = await addDoc(collection(db, 'listings'), formDataCopy)
-    setLoading(false)
-    toast.success('New Ticket saved!')
-    navigate(`/Tickets`)
+  if (e.target.value === 'true') {
+    boolean = true
+  }
+  if (e.target.value === 'false') {
+    boolean = false
   }
 
-  const onMutate = (e) => {
-    let boolean = null
-
-    if (e.target.value === 'true') {
-      boolean = true
-    }
-    if (e.target.value === 'false') {
-      boolean = false
-    }
-
-    // Files
-    if (e.target.files) {
-      setFormData((prevState) => ({
-        ...prevState,
-        images: e.target.files,
-      }))
-    }
-
-    // Text/Booleans/Numbers
-    if (!e.target.files) {
-      setFormData((prevState) => ({
-        ...prevState,
-        [e.target.id]: boolean ?? e.target.value,
-      }))
-    }
+  // Files
+  if (e.target.files) {
+    setFormData((prevState) => ({
+      ...prevState,
+      images: e.target.files,
+    }))
   }
 
-  if (loading) {
-    return 
+  // Text/Booleans/Numbers
+  if (!e.target.files) {
+    setFormData((prevState) => ({
+      ...prevState,
+      [e.target.id]: boolean ?? e.target.value,
+    }))
   }
+}
+
+if (loading) {
+  return 
+}
 
   return (
     <div className='profile'>
