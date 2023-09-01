@@ -79,8 +79,9 @@
     flex-direction: row;
     align-items: center;
     border-radius: 24px;
-    border: 2px solid var(--gray-dse);
-    background-color: var(--gray-dse);
+    /* border: 2px solid var(--gray-dse); */
+    /* background-color: var(--gray-dse); */
+    color: var(--pink);
     font-size: 64px;
     font-weight: bold;
     text-align: center;

@@ -48,7 +48,7 @@ function App() {
       <Router>
         <header className="header">
           <div className="logo">
-            <b>Josip Prpić 0246095178</b>
+            <b>JP info</b>
           </div>
           {isScreenSmall && (<div className="open-nav" onClick={toggleNav}>
             <i className={`fa-solid ${isNavOpen ? "fa-xmark" : "fa-bars"}`}></i>

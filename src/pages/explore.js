@@ -5,12 +5,16 @@ import React, { useEffect, useState } from 'react';
 import { collection, getDocs, query, where } from 'firebase/firestore';
 import { db } from '../firebase.config';
 import { getAuth } from 'firebase/auth';
+import { getDoc, doc } from 'firebase/firestore'; // Import getDoc and doc from the correct module
+
 
 function Explore() {
 
     const [ticketCount, setTicketCount] = useState(0);
-    const[taskCount, setTaskCount] = useState(0);
+    const [taskCount, setTaskCount] = useState(0);
     const [postCount, setPostCount] = useState(0);
+    const [username, setUsername] = useState('');
+
 
 
     const auth = getAuth();
@@ -81,17 +85,36 @@ function Explore() {
             console.error('Error fetching tasks:', error);
         }
         };
-
         fetchposts();
     }, [auth]);
+
+    useEffect(() => {
+        const fetchUserData = async () => {
+            try {
+                const user = auth.currentUser;
+                const userId = user.uid;
+                // Fetch the username from Firebase Authentication
+                const userSnapshot = await getDoc(doc(db, 'users', userId));
+                if (userSnapshot.exists()) {
+                    const userData = userSnapshot.data();
+                    const userDisplayName = userData.name; // Assuming displayName field exists
+                    setUsername(userDisplayName);
+                }
+            } catch (error) {
+                console.error('Error fetching user data:', error);
+            }
+        };
+        fetchUserData();
+    }, [auth]);
     
-
-
-
     return (
         <div className="home">
             <h1>Home</h1>
             <div className='home-content'>
+                <div className='home-features'>
+                        Hello, {username}
+                        {/* <h2>We missed you!</h2> */}
+                </div>
                 <div className='home-icons'>
                     <div className='icon'>
                         <div className='tickets-number'>
@@ -118,11 +141,7 @@ function Explore() {
                         </div>
                     </div>
                 </div>
-                <div className='home-features'>
-                    <div className='tickets-title'>
-                        Hello, UserRef
-                    </div>
-                </div>
+                
             </div>
         </div>
     )

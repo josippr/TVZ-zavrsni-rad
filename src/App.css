@@ -80,7 +80,7 @@ body {
 .content {
   width: auto;
   /* min-width: 800px; */
-  height: calc(max-content + 200px);
+  height: max-content;
   overflow: auto;
   /* background-color: red; */
   padding: 30px;

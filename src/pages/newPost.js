@@ -151,7 +151,7 @@ function NewPost() {
             accept="image/*"
             onChange={handleFileChange}
             required
-            style={{ height: "100px", textAlign: "center", border: "none", width: "150px"}}
+            style={{ height: "100px", textAlign: "center", border: "2 px solid #9F7AEA", width: "150px"}}
           />
           <br />
           <br />

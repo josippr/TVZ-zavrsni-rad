@@ -288,7 +288,7 @@ function Social() {
           </main>
         </div>
         <Link to='/NewPost'>
-          <div className='newPostBtn'>
+          <div className='newPostBtn'  style={{backgroundColor: "#9F7AEA"}}>
             <i className='fa-solid fa-plus'></i>
           </div>
         </Link>
