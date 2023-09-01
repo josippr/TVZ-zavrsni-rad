@@ -112,7 +112,7 @@ function Explore() {
             <h1>Home</h1>
             <div className='home-content'>
                 <div className='home-features'>
-                        Hello, {username}
+                        Hello {username}!
                         {/* <h2>We missed you!</h2> */}
                 </div>
                 <div className='home-icons'>
