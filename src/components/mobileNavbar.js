@@ -24,7 +24,7 @@ function MobileNavbar({ onCloseNav }) {
         <div className='nav-item' onClick={() => { navigate('/Social'); handleLinkClick(); }}>
           <p><i className="fa-solid fa-earth-americas"></i> Social</p>
         </div>
-        <div className='nav-item' onClick={() => { navigate('/Profile'); handleLinkClick(); }}>
+        <div className='nav-item' onClick={() => { navigate('/About'); handleLinkClick(); }}>
           <p><i className="fa-solid fa-envelope"></i> About</p>
         </div>
         <div className='nav-item' onClick={() => { navigate('/signIn'); handleLinkClick(); }}>
