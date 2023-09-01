@@ -22,7 +22,7 @@ function Navbar() {
                     <div className='nav-item' onClick={() => navigate('/Social')}>
                         <p><i class="fa-solid fa-earth-americas"></i> Social</p>
                     </div>
-                    <div className='nav-item' onClick={() => navigate('/Profile')}>
+                    <div className='nav-item' onClick={() => navigate('/About')}>
                         <p><i class="fa-solid fa-circle-info"></i> About</p>
                     </div>
                     

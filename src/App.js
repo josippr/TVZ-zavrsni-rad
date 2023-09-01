@@ -10,7 +10,7 @@ import SignUp from './pages/SignUp';
 import SignIn from './pages/Signin';
 import Navbar from './components/Navbar';
 import Tickets from './pages/tickets';
-import Settings from './pages/Settings';
+import About from './pages/about';
 import WorkTasks from './pages/WorkTasks';
 import PrivateRoute from './components/PrivateRoute';
 import CreateTicket from './pages/CreateTicket';
@@ -48,7 +48,7 @@ function App() {
       <Router>
         <header className="header">
           <div className="logo">
-            <b>JP Info</b>
+            <b>Josip Prpić 0246095178</b>
           </div>
           {isScreenSmall && (<div className="open-nav" onClick={toggleNav}>
             <i className={`fa-solid ${isNavOpen ? "fa-xmark" : "fa-bars"}`}></i>
@@ -98,7 +98,7 @@ function App() {
               <Route path="/profile" element={<PrivateRoute />}>
                 <Route path="/profile" element={<Profile />} />
               </Route>
-              <Route path="/settings" element={<Settings />} />
+              <Route path="/about" element={<About/>} />
               <Route path="/forgotPassword" element={<ForgotPassword />} />
             </Routes>
           </div>

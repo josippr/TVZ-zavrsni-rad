@@ -34,7 +34,6 @@
     /* background-color: #0e7a48; */
 }
 
-
 .icon {
     width: 50%;
     height: inherit;
@@ -57,7 +56,6 @@
     margin: 0 auto;
     transition: 0.2s ease-in-out;
 }
-
 
 .tickets-number:hover {
     cursor: pointer;
